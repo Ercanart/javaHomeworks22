@@ -16,11 +16,11 @@ public class EducatorManager {
 		this.loggers = loggers;
 	}
 
-	public void add(Educators educators) {
+	public void add(Educators aducators) throws Exception {
 	
-		educatorDao.add(educators);
+		educatorDao.add(aducators);
 		for (Logger logger : loggers) { 
-			logger.log(educators.getEducatorName() +" "+ educators.getEducatorSurname());
+			logger.log(aducators.getEducatorName() +" "+ aducators.getEducatorSurname());
 		}
 	}
 }

@@ -16,7 +16,7 @@ public class EducatorManager {
 		this.loggers = loggers;
 	}
 
-	public void add(Educators educators) {
+	public void add(Educators educators) throws Exception {
 	
 		educatorDao.add(educators);
 		for (Logger logger : loggers) { 

@@ -3,7 +3,9 @@ package kodlamaIo.business;
 
 
 
-import kodlamaIo.core.logging.Logger;
+
+import java.util.logging.Logger;
+
 import kodlamaIo.dataAccess.interfaces.ICourseDao;
 import kodlamaIo.entities.Courses;
 

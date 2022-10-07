@@ -13,7 +13,7 @@ public class CategoryManager {
 		this.loggers = loggers;
 	}
 	
-	public void add(Categories categories){
+	public void add(Categories categories) throws Exception {
 		
 		categoryDao.add(categories);
 		for (Logger logger : loggers) { 
