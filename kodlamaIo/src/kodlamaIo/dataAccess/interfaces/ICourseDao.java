@@ -1,8 +1,8 @@
 package kodlamaIo.dataAccess.interfaces;
 
-import kodlamaIo.entities.Courses;
+import kodlamaIo.entities.Course;
 
 public interface ICourseDao {
-	void add (Courses courses);
+	void add (Course courses);
 
 }

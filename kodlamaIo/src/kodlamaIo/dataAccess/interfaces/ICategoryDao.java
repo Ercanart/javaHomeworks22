@@ -1,8 +1,8 @@
 package kodlamaIo.dataAccess.interfaces;
 
 
-import kodlamaIo.entities.Categories;
+import kodlamaIo.entities.Category;
 
 public interface ICategoryDao {
-	void add (Categories categories);
+	void add (Category categories);
 }	

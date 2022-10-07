@@ -1,5 +1,8 @@
 package kodlamaIo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import kodlamaIo.business.CategoryManager;
 import kodlamaIo.business.CourseManager;
 import kodlamaIo.business.EducatorManager;
@@ -10,33 +13,39 @@ import kodlamaIo.core.logging.MailLogger;
 import kodlamaIo.dataAccess.Hibernate.HibernateCourseDao;
 import kodlamaIo.dataAccess.Hibernate.HibernateEducatorDao;
 import kodlamaIo.dataAccess.Jdbc.JdbcCategoryDao;
-import kodlamaIo.entities.Categories;
-import kodlamaIo.entities.Courses;
-import kodlamaIo.entities.Educators;
+import kodlamaIo.entities.Category;
+import kodlamaIo.entities.Course;
+import kodlamaIo.entities.Educator;
 
 public class Main {
 
 	public static void main(String[] args) throws Exception {
 		
-		Courses course1 = new Courses(1,"Java2022",3000);
+		Course course1 = new Course(1,"Java2022",3000);
+		Course course2 = new Course(2,"Java2022",4000);
 		
 		Logger[] loggers = {new DatabaseLogger(), new FileLogger(), new MailLogger() };
 		
-		CourseManager courseManager = new CourseManager(new HibernateCourseDao(), loggers);
+		List<Course> courseDb = new ArrayList<>();
+		
+		CourseManager courseManager = new CourseManager(new HibernateCourseDao(), loggers, courseDb);
 		courseManager.add(course1);
+//		courseManager.add(course2);
 		
 		System.out.println("---------------------------------------------------------");
 		
-		Categories category1 = new Categories(2,"Programlama");
-		Categories category2 = new Categories(3,"yeni kategori");
+		Category category1 = new Category(2,"Programlama");
+		Category category2 = new Category(3,"Programlama");
 		
+		List<Category> categoryDb = new ArrayList<>();
 		
-		CategoryManager categoryManager = new CategoryManager(new JdbcCategoryDao(), loggers);
+		CategoryManager categoryManager = new CategoryManager(new JdbcCategoryDao(), loggers, categoryDb);
 		categoryManager.add(category1);
+		categoryManager.add(category2);
 		
 		System.out.println("---------------------------------------------------------");
 		
-		Educators educator1 = new Educators(3,"Engin","Demiroğ");
+		Educator educator1 = new Educator(3,"Engin","Demiroğ");
 
 		EducatorManager educatorManager = new EducatorManager(new HibernateEducatorDao(), loggers);
 		educatorManager.add(educator1);

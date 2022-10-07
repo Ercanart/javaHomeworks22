@@ -1,7 +1,7 @@
 package kodlamaIo.dataAccess.interfaces;
 
-import kodlamaIo.entities.Educators;
+import kodlamaIo.entities.Educator;
 
 public interface IEducatorDao {
-	void add (Educators educators);
+	void add (Educator educators);
 }

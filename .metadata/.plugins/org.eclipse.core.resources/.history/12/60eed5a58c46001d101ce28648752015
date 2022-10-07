@@ -1,0 +1,40 @@
+package kodlamaIo.business;
+
+
+
+
+import java.util.List;
+
+import kodlamaIo.core.logging.Logger;
+import kodlamaIo.dataAccess.interfaces.ICourseDao;
+import kodlamaIo.entities.Course;
+
+public class CourseManager {
+	private ICourseDao courseDao;
+	private Logger[] loggers;
+	private List<Course> courses;
+	
+	
+	
+	public CourseManager(ICourseDao courseDao, Logger[] loggers, List<Course> courses) {
+		super();
+		this.courseDao = courseDao;
+		this.loggers = loggers;
+		this.courses = courses;
+	}
+
+
+	public void add(Course courses) throws Exception {
+	
+		if(courses.getCoursePrice()<0) {
+			throw new Exception("Ürün fiyatı 0 dan küçük olamaz");
+		
+		}
+		courseDao.add(courses);
+		for (Logger logger : loggers) { 
+			logger.log(courses.getCourseName());
+		}
+	}
+	
+	
+}

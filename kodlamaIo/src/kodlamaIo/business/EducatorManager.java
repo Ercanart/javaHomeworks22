@@ -2,7 +2,7 @@ package kodlamaIo.business;
 import java.util.List;
 import kodlamaIo.core.logging.Logger;
 import kodlamaIo.dataAccess.interfaces.IEducatorDao;
-import kodlamaIo.entities.Educators;
+import kodlamaIo.entities.Educator;
 
 public class EducatorManager {
 	private IEducatorDao educatorDao ;
@@ -16,7 +16,7 @@ public class EducatorManager {
 		this.loggers = loggers;
 	}
 
-	public void add(Educators educators) {
+	public void add(Educator educators) {
 	
 		educatorDao.add(educators);
 		for (Logger logger : loggers) { 
