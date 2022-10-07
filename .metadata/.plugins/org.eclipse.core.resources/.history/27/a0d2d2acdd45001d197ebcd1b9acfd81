@@ -1,0 +1,10 @@
+package kodlamaIo.dataAccess.interfaces;
+
+import java.util.List;
+
+import kodlamaIo.entities.Categories;
+
+public interface ICategoryDao {
+	void add (Categories categories);
+	List<Categories> getAll();
+}

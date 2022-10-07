@@ -1,0 +1,5 @@
+package kodlamaIo.dataAccess.Jdbc;
+
+public class JdbcCategoryDao {
+
+}

@@ -1,0 +1,7 @@
+package kodlamaIo.entities;
+
+public class Categories {
+	private int id;
+	private String CategoryName;
+
+}

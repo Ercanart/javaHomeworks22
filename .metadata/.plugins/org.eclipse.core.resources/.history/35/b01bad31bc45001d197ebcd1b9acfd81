@@ -1,0 +1,5 @@
+package kodlamaIo.dataAccess.interfaces;
+
+public interface ICourseEducatorDao {
+
+}

@@ -1,0 +1,15 @@
+package kodlamaIo;
+
+import kodlamaIo.entities.Courses;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/* Product product1 = new Product(1,"Iphone Xr", 9000); */
+		
+		Courses course1 = new Courses(1,"Java2022");
+		course1.getId();
+
+	}
+
+}

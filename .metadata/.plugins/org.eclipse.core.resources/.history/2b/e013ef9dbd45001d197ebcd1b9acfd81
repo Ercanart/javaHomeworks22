@@ -1,0 +1,5 @@
+package kodlamaIo.core.logging;
+
+public class MailLogger {
+
+}

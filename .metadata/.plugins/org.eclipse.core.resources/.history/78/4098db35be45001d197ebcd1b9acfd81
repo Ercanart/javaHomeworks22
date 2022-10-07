@@ -1,0 +1,19 @@
+package kodlamaIo;
+
+import kodlamaIo.entities.Courses;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Courses course1 = new Courses(1,"Java2022");
+		
+		System.out.println("Id : " + course1.getId());
+		System.out.println("Course Name : " + course1.getCourseName());
+		
+		
+
+
+	}
+
+}

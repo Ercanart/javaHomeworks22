@@ -1,0 +1,8 @@
+package kodlamaIo.entities;
+
+public class Educators {
+	private int id;
+	private String educatorName;
+	private String educatorSurname;
+
+}

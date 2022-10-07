@@ -1,0 +1,26 @@
+package kodlamaIo.business;
+
+import kodlamaIo.core.logging.Logger;
+import kodlamaIo.dataAccess.interfaces.ICategoryDao;
+import kodlamaIo.dataAccess.interfaces.ICourseDao;
+import kodlamaIo.entities.Categories;
+import kodlamaIo.entities.Courses;
+
+public class CategoryManager {
+	private ICategoryDao categoryDao;
+	private Logger[] loggers;
+	
+	public CategoryManager(ICategoryDao categoryDao, Logger[] loggers) {
+		this.categoryDao = categoryDao;
+		this.loggers = loggers;
+	}
+	
+	public void add(Categories categories) throws Exception {
+	
+		
+		for (Logger logger : loggers) { 
+			logger.log(categories.getCategoryName());
+		}
+	}
+
+}

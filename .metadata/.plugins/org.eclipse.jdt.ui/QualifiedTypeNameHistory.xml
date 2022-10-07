@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="kodlamaIo.dataAccess.interfaces.ICourseDao"/>
+    <fullyQualifiedTypeName name="kodlamaIo.entities.Courses"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="java.lang.System.Logger"/>
+    <fullyQualifiedTypeName name="kodlamaIo.core.logging.DatabaseLogger"/>
+    <fullyQualifiedTypeName name="kodlamaIo.core.logging.Logger"/>
+    <fullyQualifiedTypeName name="kodlamaIo.core.logging.FileLogger"/>
+    <fullyQualifiedTypeName name="kodlamaIo.core.logging.MailLogger"/>
+    <fullyQualifiedTypeName name="kodlamaIo.business.CourseManager"/>
+    <fullyQualifiedTypeName name="kodlamaIo.dataAccess.Hibernate.HibernateCourseDao"/>
+    <fullyQualifiedTypeName name="kodlamaIo.dataAccess.interfaces.ICategoryDao"/>
+    <fullyQualifiedTypeName name="kodlamaIo.business.CategoryManager"/>
+    <fullyQualifiedTypeName name="kodlamaIo.dataAccess.Jdbc.JdbcCategoryDao"/>
+    <fullyQualifiedTypeName name="kodlamaIo.entities.Categories"/>
+    <fullyQualifiedTypeName name="kodlamaIo.entities.Educators"/>
+    <fullyQualifiedTypeName name="kodlamaIo.dataAccess.interfaces.IEducatorDao"/>
+    <fullyQualifiedTypeName name="kodlamaIo.dataAccess.Hibernate.HibernateEducatorDao"/>
+    <fullyQualifiedTypeName name="kodlamaIo.business.EducatorManager"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

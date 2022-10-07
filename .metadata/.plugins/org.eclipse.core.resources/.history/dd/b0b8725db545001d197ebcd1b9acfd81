@@ -1,0 +1,6 @@
+package kodlamaIo.entities;
+
+public class Educators extends Courses {
+	private String surName;
+
+}

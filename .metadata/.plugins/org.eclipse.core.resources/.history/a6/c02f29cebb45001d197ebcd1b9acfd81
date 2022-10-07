@@ -1,0 +1,5 @@
+package kodlamaIo.dataAccess.Hibernate;
+
+public class HibernateCategoryDao {
+
+}

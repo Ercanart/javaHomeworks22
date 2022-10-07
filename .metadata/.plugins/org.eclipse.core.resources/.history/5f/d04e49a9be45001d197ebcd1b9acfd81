@@ -1,0 +1,18 @@
+package kodlamaIo.business;
+
+import java.util.logging.Logger;
+
+import kodlamaIo.dataAccess.interfaces.ICourseDao;
+
+public class CourseManager {
+	private ICourseDao courseDao;
+	private Logger[] loggers;
+	
+	public CourseManager(ICourseDao courseDao, Logger[] loggers) {
+		super();
+		this.courseDao = courseDao;
+		this.loggers = loggers;
+	}
+	
+	
+}
