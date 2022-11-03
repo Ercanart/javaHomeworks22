@@ -42,6 +42,3 @@ Ayrıca;
 </ul>
 
 </br>
-
-<b><em>İncelediğiniz için teşekkür ederim... <br>
-Ercan Artukoğlu </em></b>
